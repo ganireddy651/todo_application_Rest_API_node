@@ -1,11 +1,11 @@
 const express = require("express");
 const path = require("path");
-// const sqlite = require("sqlite");
+const { open } = require("sqlite");
 const sqlite3 = require("sqlite3");
 const app = express();
 app.use(express.json());
 const dbPath = path.join(__dirname, "todoApplication.db");
-const { open } = sqlite;
+// const { open } = sqlite;
 
 let db = null;
 
